@@ -34,39 +34,57 @@ type Country = {
 You can get all the countries just calling
 
 ```js
-import { countries } from "iso-3166-utils";
+import { country } from "iso-3166-utils";
+
+const countries = country.data;
 ```
 
-You can get a country by its name with `getCountryFromName`:
+You can get a country by its name with `getFromName`:
 
 ```js
-import { getCountryFromName } from "iso-3166-utils";
+import { country } from "iso-3166-utils";
 
-const US = getCountryFromName("United States of America");
+const US = country.getFromName("United States of America");
 ```
 
-You can get a country by its alpha2 value with `getCountryFromAlpha2`:
+You can get a country by its alpha2 value with `getFromAlpha2`:
 
 ```js
-import { getCountryFromAlpha2 } from "iso-3166-utils";
+import { country } from "iso-3166-utils";
 
-const US = getCountryFromAlpha2("US");
+const US = country.getFromAlpha2("US");
 ```
 
-You can get a country by its alpha3 value with `getCountryFromAlpha3`:
+You can get a country by its alpha3 value with `getFromAlpha3`:
 
 ```js
-import { getCountryFromAlpha3 } from "iso-3166-utils";
+import { country } from "iso-3166-utils";
 
-const US = getCountryFromAlpha3("USA");
+const US = country.getFromAlpha3("USA");
 ```
 
-You can get a country by its code with `getCountryFromAlpha3`:
+You can get a country by its code with `getFromAlpha3`:
 
 ```js
-import { getCountryFromCode } from "iso-3166-utils";
+import { country } from "iso-3166-utils";
 
-const US = getCountryFromCode("840");
+const US = country.getFromCode("840");
+```
+
+And you can have the same for subdivisions, like `AK`:
+
+```js
+import { subdivision } from "iso-3166-utils";
+
+const AK = subdivision.us.getFromCode("AK");
+```
+
+Or you can get it from the name:
+
+```js
+import { subdivision } from "iso-3166-utils";
+
+const AK = subdivision.us.getFromName("Alaska");
 ```
 
 You can find a full list of countries from the <a href="https://en.wikipedia.org/wiki/ISO_3166-1">source</a>

@@ -28,7 +28,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "yarn generate && tsdx test",
+    "test": "yarn generate:countries && yarn generate:us && tsdx test",
     "lint": "tsdx lint",
     "prepare": "yarn generate:countries && yarn generate:us && tsdx build",
     "generate:countries": "node --loader ts-node/esm utils/generators/countries.ts",
