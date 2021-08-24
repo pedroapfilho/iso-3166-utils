@@ -1,16 +1,18 @@
 import { Country, US } from "./types";
-import countries from "./data/countries.json";
+import rawCountries from "./data/countries.json";
 import {
   getCountryFromName,
   getCountryFromAlpha2,
   getCountryFromAlpha3,
   getCountryFromCode,
 } from "./countries";
-import us from "./data/us.json";
+import rawUS from "./data/us.json";
 import { getUSFromCode, getUSFromName } from "./subdivisions/us";
 
+const countries = rawCountries;
+
 const subdivisions = {
-  us,
+  us: rawUS,
 };
 
 export {
