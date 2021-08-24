@@ -2,6 +2,7 @@
   "name": "iso-3166-utils",
   "author": "Pedro Filho",
   "description": "A helper to get country codes following the ISO 3316",
+  "type": "module",
   "module": "dist/iso-3166-utils.esm.js",
   "version": "0.0.1",
   "license": "MIT",
@@ -30,7 +31,7 @@
     "test": "yarn generate && tsdx test",
     "lint": "tsdx lint",
     "prepare": "yarn generate && tsdx build",
-    "generate": "ts-node utils/generateCountries.ts"
+    "generate": "node --loader ts-node/esm utils/generateCountries.ts"
   },
   "husky": {
     "hooks": {
@@ -38,6 +39,7 @@
     }
   },
   "devDependencies": {
+    "@types/node": "^16.7.1",
     "@types/puppeteer": "^5.4.4",
     "husky": "^7.0.1",
     "puppeteer": "^10.2.0",
