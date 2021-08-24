@@ -1,8 +1,8 @@
 {
-  "name": "iso-3166",
+  "name": "iso-3166-utils",
   "author": "Pedro Filho",
   "description": "A helper to get country codes following the ISO 3316",
-  "module": "dist/iso-3166.esm.js",
+  "module": "dist/iso-3166-utils.esm.js",
   "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
@@ -14,16 +14,16 @@
   "engines": {
     "node": ">=14"
   },
-  "repository": "https://github.com/pedroapfilho/iso-3166.git",
+  "repository": "https://github.com/pedroapfilho/iso-3166-utils.git",
   "keywords": [
     "ISO 3166",
     "country",
     "helper"
   ],
   "bugs": {
-    "url": "https://github.com/pedroapfilho/iso-3166/issues"
+    "url": "https://github.com/pedroapfilho/iso-3166-utils/issues"
   },
-  "homepage": "https://github.com/pedroapfilho/iso-3166#readme",
+  "homepage": "https://github.com/pedroapfilho/iso-3166-utils#readme",
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
