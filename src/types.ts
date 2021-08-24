@@ -5,4 +5,4 @@ type Country = {
   code: string;
 };
 
-export type { Country };
+export { Country };

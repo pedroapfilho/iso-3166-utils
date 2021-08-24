@@ -3,7 +3,7 @@ import {
   getCountryFromAlpha2,
   getCountryFromAlpha3,
   getCountryFromCode,
-} from "../src";
+} from "./";
 
 const COUNTRY = {
   name: "Afghanistan",

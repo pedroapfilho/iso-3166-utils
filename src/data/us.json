@@ -1,0 +1,287 @@
+[
+    {
+        "code": "AL",
+        "name": "Alabama",
+        "category": "state"
+    },
+    {
+        "code": "AK",
+        "name": "Alaska",
+        "category": "state"
+    },
+    {
+        "code": "AZ",
+        "name": "Arizona",
+        "category": "state"
+    },
+    {
+        "code": "AR",
+        "name": "Arkansas",
+        "category": "state"
+    },
+    {
+        "code": "CA",
+        "name": "California",
+        "category": "state"
+    },
+    {
+        "code": "CO",
+        "name": "Colorado",
+        "category": "state"
+    },
+    {
+        "code": "CT",
+        "name": "Connecticut",
+        "category": "state"
+    },
+    {
+        "code": "DE",
+        "name": "Delaware",
+        "category": "state"
+    },
+    {
+        "code": "FL",
+        "name": "Florida",
+        "category": "state"
+    },
+    {
+        "code": "GA",
+        "name": "Georgia",
+        "category": "state"
+    },
+    {
+        "code": "HI",
+        "name": "Hawaii",
+        "category": "state"
+    },
+    {
+        "code": "ID",
+        "name": "Idaho",
+        "category": "state"
+    },
+    {
+        "code": "IL",
+        "name": "Illinois",
+        "category": "state"
+    },
+    {
+        "code": "IN",
+        "name": "Indiana",
+        "category": "state"
+    },
+    {
+        "code": "IA",
+        "name": "Iowa",
+        "category": "state"
+    },
+    {
+        "code": "KS",
+        "name": "Kansas",
+        "category": "state"
+    },
+    {
+        "code": "KY",
+        "name": "Kentucky",
+        "category": "state"
+    },
+    {
+        "code": "LA",
+        "name": "Louisiana",
+        "category": "state"
+    },
+    {
+        "code": "ME",
+        "name": "Maine",
+        "category": "state"
+    },
+    {
+        "code": "MD",
+        "name": "Maryland",
+        "category": "state"
+    },
+    {
+        "code": "MA",
+        "name": "Massachusetts",
+        "category": "state"
+    },
+    {
+        "code": "MI",
+        "name": "Michigan",
+        "category": "state"
+    },
+    {
+        "code": "MN",
+        "name": "Minnesota",
+        "category": "state"
+    },
+    {
+        "code": "MS",
+        "name": "Mississippi",
+        "category": "state"
+    },
+    {
+        "code": "MO",
+        "name": "Missouri",
+        "category": "state"
+    },
+    {
+        "code": "MT",
+        "name": "Montana",
+        "category": "state"
+    },
+    {
+        "code": "NE",
+        "name": "Nebraska",
+        "category": "state"
+    },
+    {
+        "code": "NV",
+        "name": "Nevada",
+        "category": "state"
+    },
+    {
+        "code": "NH",
+        "name": "New Hampshire",
+        "category": "state"
+    },
+    {
+        "code": "NJ",
+        "name": "New Jersey",
+        "category": "state"
+    },
+    {
+        "code": "NM",
+        "name": "New Mexico",
+        "category": "state"
+    },
+    {
+        "code": "NY",
+        "name": "New York",
+        "category": "state"
+    },
+    {
+        "code": "NC",
+        "name": "North Carolina",
+        "category": "state"
+    },
+    {
+        "code": "ND",
+        "name": "North Dakota",
+        "category": "state"
+    },
+    {
+        "code": "OH",
+        "name": "Ohio",
+        "category": "state"
+    },
+    {
+        "code": "OK",
+        "name": "Oklahoma",
+        "category": "state"
+    },
+    {
+        "code": "OR",
+        "name": "Oregon",
+        "category": "state"
+    },
+    {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "category": "state"
+    },
+    {
+        "code": "RI",
+        "name": "Rhode Island",
+        "category": "state"
+    },
+    {
+        "code": "SC",
+        "name": "South Carolina",
+        "category": "state"
+    },
+    {
+        "code": "SD",
+        "name": "South Dakota",
+        "category": "state"
+    },
+    {
+        "code": "TN",
+        "name": "Tennessee",
+        "category": "state"
+    },
+    {
+        "code": "TX",
+        "name": "Texas",
+        "category": "state"
+    },
+    {
+        "code": "UT",
+        "name": "Utah",
+        "category": "state"
+    },
+    {
+        "code": "VT",
+        "name": "Vermont",
+        "category": "state"
+    },
+    {
+        "code": "VA",
+        "name": "Virginia",
+        "category": "state"
+    },
+    {
+        "code": "WA",
+        "name": "Washington",
+        "category": "state"
+    },
+    {
+        "code": "WV",
+        "name": "West Virginia",
+        "category": "state"
+    },
+    {
+        "code": "WI",
+        "name": "Wisconsin",
+        "category": "state"
+    },
+    {
+        "code": "WY",
+        "name": "Wyoming",
+        "category": "state"
+    },
+    {
+        "code": "DC",
+        "name": "District of Columbia",
+        "category": "district"
+    },
+    {
+        "code": "AS",
+        "name": "American Samoa",
+        "category": "outlying area"
+    },
+    {
+        "code": "GU",
+        "name": "Guam",
+        "category": "outlying area"
+    },
+    {
+        "code": "MP",
+        "name": "Northern Mariana Islands",
+        "category": "outlying area"
+    },
+    {
+        "code": "PR",
+        "name": "Puerto Rico",
+        "category": "outlying area"
+    },
+    {
+        "code": "UM",
+        "name": "United States Minor Outlying Islands",
+        "category": "outlying area"
+    },
+    {
+        "code": "VI",
+        "name": "U.S. Virgin Islands",
+        "category": "outlying area"
+    }
+]
