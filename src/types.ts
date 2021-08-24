@@ -5,4 +5,10 @@ type Country = {
   code: string;
 };
 
-export { Country };
+type US = {
+  name: string;
+  code: string;
+  category: string;
+};
+
+export { Country, US };
