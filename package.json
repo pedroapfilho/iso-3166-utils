@@ -4,7 +4,7 @@
   "description": "A helper to get country codes following the ISO 3316",
   "type": "module",
   "module": "dist/iso-3166-utils.esm.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
