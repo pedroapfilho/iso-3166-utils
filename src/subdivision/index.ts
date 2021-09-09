@@ -1,7 +1,7 @@
 import us from "./us";
 
 const subdivision = {
-  us,
+  us
 };
 
 export default subdivision;

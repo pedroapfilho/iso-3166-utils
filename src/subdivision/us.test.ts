@@ -3,7 +3,7 @@ import us from "./us";
 const STATE = {
   name: "Alaska",
   code: "AK",
-  category: "state",
+  category: "state"
 };
 
 describe("US", () => {
