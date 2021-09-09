@@ -31,6 +31,16 @@ type Country = {
 };
 ```
 
+And this is the subdivision `US` type:
+
+```ts
+type US = {
+  name: string;
+  code: string;
+  category: string;
+};
+```
+
 You can get all the countries just calling
 
 ```js
@@ -88,6 +98,8 @@ const AK = subdivision.us.getFromName("Alaska");
 ```
 
 You can find a full list of countries from the <a href="https://en.wikipedia.org/wiki/ISO_3166-1">source</a>
+
+You can find a full list of subdivisions from the <a href="https://en.wikipedia.org/wiki/ISO_3166-2">source</a>
 
 ## Author
 
