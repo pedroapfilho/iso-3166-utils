@@ -5,10 +5,10 @@ type Country = {
   code: string;
 };
 
-type US = {
+type SubDivision = {
   name: string;
   code: string;
   category: string;
 };
 
-export { Country, US };
+export { Country, SubDivision };

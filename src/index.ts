@@ -1,5 +1,4 @@
-import { Country, US } from "./types";
-import country from "./country";
-import subdivision from "./subdivision";
+export type { Country, SubDivision } from "./types";
 
-export { Country, country, subdivision, US };
+export * from "./country";
+export * from "./subdivision";

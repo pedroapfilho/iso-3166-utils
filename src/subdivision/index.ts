@@ -1,7 +1,17 @@
-import us from "./us";
+import subdivisions from "../data/us.json";
 
-const subdivision = {
-  us
+const getFromName = (name: string) => {
+  return subdivisions.find((c) => c.name.toUpperCase() === name.toUpperCase());
 };
 
-export default subdivision;
+const getFromCode = (code: string) => {
+  return subdivisions.find((c) => c.code.toUpperCase() === code.toUpperCase());
+};
+
+const subdivision = {
+  data: subdivisions,
+  getFromCode,
+  getFromName,
+};
+
+export { subdivision };

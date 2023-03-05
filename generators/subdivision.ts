@@ -1,23 +1,22 @@
 import puppeteer from "puppeteer";
 import { writeFile } from "fs";
 
-const SOURCE = "https://wikipedia.org/wiki/ISO_3166-2:US";
+const BASE_SOURCE = "https://wikipedia.org/wiki/ISO_3166-2";
 
-type State = {
+type SubDivision = {
   name: string;
   code: string;
   category: string;
 };
 
-const run = async (): Promise<void> => {
+const subdivision = async ({ alpha2 }: { alpha2: string }): Promise<void> => {
   const browser = await puppeteer.launch();
-
   const page = await browser.newPage();
-  await page.goto(SOURCE);
+  await page.goto(`${BASE_SOURCE}:${alpha2.toUpperCase()}`);
 
-  const states: State[] = await page.evaluate(() => {
+  const raw: SubDivision[] = await page.evaluate(() => {
     const rows = document.querySelectorAll(
-      "#mw-content-text > div.mw-parser-output > table:nth-child(13) > tbody > tr"
+      "#mw-content-text > div.mw-parser-output > table:nth-child(11) > tbody > tr"
     );
 
     const data = Array.from(rows, (row) => {
@@ -37,19 +36,17 @@ const run = async (): Promise<void> => {
 
   await browser.close();
 
+  const subdivision = raw
+    .filter((state) => state.name)
+    .map((state) => ({ ...state, name: state.name.trim() }));
+
   await writeFile(
-    "./src/data/us.json",
-    JSON.stringify(
-      states
-        .filter((state) => state.name)
-        .map((state) => ({ ...state, name: state.name.trim() })),
-      null,
-      4
-    ),
+    `./src/data/${alpha2.toLowerCase()}.json`,
+    JSON.stringify(subdivision, null, 4),
     (err) => {
       if (err) throw err;
     }
   );
 };
 
-run();
+export { subdivision };

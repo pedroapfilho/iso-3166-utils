@@ -1,21 +1,21 @@
-import us from "./us";
+import us from "./";
 
 const STATE = {
   name: "Alaska",
   code: "AK",
-  category: "state"
+  category: "state",
 };
 
-describe("US", () => {
-  it("Should get us from name", () => {
+describe("SubDivision", () => {
+  it("Should get subdivision from name", () => {
     expect(us.getFromName(STATE.name)?.name).toEqual(STATE.name);
   });
 
-  it("Should get us from name on lowercase", () => {
+  it("Should get subdivision from name on lowercase", () => {
     expect(us.getFromName(STATE.name.toLowerCase())?.name).toEqual(STATE.name);
   });
 
-  it("Should get us from code", () => {
+  it("Should get subdivision from code", () => {
     expect(us.getFromCode(STATE.code)?.code).toEqual(STATE.code);
   });
 

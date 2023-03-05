@@ -1,10 +1,10 @@
-import country from "./";
+import { country } from "./";
 
 const COUNTRY = {
   name: "Afghanistan",
   alpha2: "AF",
   alpha3: "AFG",
-  code: "004"
+  code: "004",
 };
 
 describe("Country", () => {

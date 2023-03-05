@@ -1,22 +1,16 @@
 import puppeteer from "puppeteer";
-import { writeFile } from "fs";
+import { countries, Country } from "./countries";
+import { subdivision } from "./subdivision";
 
 const SOURCE = "https://wikipedia.org/wiki/ISO_3166-1";
 
-type Country = {
-  name: string;
-  alpha2: string;
-  alpha3: string;
-  code: string;
-};
-
-const run = async (): Promise<void> => {
+const getSubdivisions = async () => {
   const browser = await puppeteer.launch();
 
   const page = await browser.newPage();
   await page.goto(SOURCE);
 
-  const countries: Country[] = await page.evaluate(() => {
+  const raw: Country[] = await page.evaluate(() => {
     const rows = document.querySelectorAll(
       "#mw-content-text > div.mw-parser-output > table:nth-child(32) > tbody > tr"
     );
@@ -39,19 +33,19 @@ const run = async (): Promise<void> => {
 
   await browser.close();
 
-  await writeFile(
-    "./src/data/countries.json",
-    JSON.stringify(
-      countries
-        .filter((country) => country.name)
-        .map((country) => ({ ...country, name: country.name.trim() })),
-      null,
-      4
-    ),
-    (err) => {
-      if (err) throw err;
-    }
-  );
+  const subdivisions = raw.filter((country) => country.name);
+
+  return subdivisions.map((country) => country.alpha2);
+};
+
+const run = async () => {
+  const subdivisions = await getSubdivisions();
+
+  await countries();
+
+  for (const alpha2 of subdivisions) {
+    await subdivision({ alpha2 });
+  }
 };
 
 run();
