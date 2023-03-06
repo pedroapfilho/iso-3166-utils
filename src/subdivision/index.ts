@@ -1,5 +1,5 @@
-const subdivision = (alpha2: string) => {
-  const subdivision = require(`../data/${alpha2.toLowerCase()}.json`) as {
+const subdivision = (alpha2: "us" | "br") => {
+  const subdivision = require(`../data/${alpha2}.json`) as {
     name: string;
     code: string;
     category: string;

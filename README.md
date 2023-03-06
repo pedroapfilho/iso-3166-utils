@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to iso-3166-utils 👋</h1>
+<h1 align="center">iso-3166-utils</h1>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/iso-3166-utils"><img alt="NPM version" src="https://img.shields.io/npm/v/iso-3166-utils"></a>
@@ -12,34 +12,9 @@
 
 ```sh
 npm install iso-3166-utils
-
-or
-
-yarn add iso-3166-utils
 ```
 
 ## Usage
-
-This is the `Country` type:
-
-```ts
-type Country = {
-  name: string;
-  alpha2: string;
-  alpha3: string;
-  code: string;
-};
-```
-
-And this is the subdivision `US` type:
-
-```ts
-type US = {
-  name: string;
-  code: string;
-  category: string;
-};
-```
 
 You can get all the countries just calling
 
@@ -86,7 +61,7 @@ And you can have the same for subdivisions, like `AK`:
 ```js
 import { subdivision } from "iso-3166-utils";
 
-const AK = subdivision.us.getFromCode("AK");
+const AK = subdivision("us").getFromCode("AK");
 ```
 
 Or you can get it from the name:
@@ -94,30 +69,13 @@ Or you can get it from the name:
 ```js
 import { subdivision } from "iso-3166-utils";
 
-const AK = subdivision.us.getFromName("Alaska");
+const AK = subdivision("us").getFromName("Alaska");
 ```
 
 You can find a full list of countries from the <a href="https://en.wikipedia.org/wiki/ISO_3166-1">source</a>
 
 You can find a full list of subdivisions from the <a href="https://en.wikipedia.org/wiki/ISO_3166-2">source</a>
 
-## Author
-
-👤 **Pedro Filho <pedro@filho.me>**
-
-- Twitter: [@pedrofilhome](https://twitter.com/pedrofilhome)
-- Github: [@pedroapfilho](https://github.com/pedroapfilho)
-
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/pedroapfilho/iso-3166-utils/issues).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-<a href="https://www.buymeacoffee.com/khcUAVF" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-
-```
-
-```
