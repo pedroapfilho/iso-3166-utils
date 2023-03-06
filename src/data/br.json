@@ -1,0 +1,137 @@
+[
+  {
+    "code": "AC",
+    "name": "Acre",
+    "category": "state"
+  },
+  {
+    "code": "AL",
+    "name": "Alagoas",
+    "category": "state"
+  },
+  {
+    "code": "AP",
+    "name": "Amapá",
+    "category": "state"
+  },
+  {
+    "code": "AM",
+    "name": "Amazonas",
+    "category": "state"
+  },
+  {
+    "code": "BA",
+    "name": "Bahia",
+    "category": "state"
+  },
+  {
+    "code": "CE",
+    "name": "Ceará",
+    "category": "state"
+  },
+  {
+    "code": "DF",
+    "name": "Distrito Federal",
+    "category": "federal district"
+  },
+  {
+    "code": "ES",
+    "name": "Espírito Santo",
+    "category": "state"
+  },
+  {
+    "code": "GO",
+    "name": "Goiás",
+    "category": "state"
+  },
+  {
+    "code": "MA",
+    "name": "Maranhão",
+    "category": "state"
+  },
+  {
+    "code": "MT",
+    "name": "Mato Grosso",
+    "category": "state"
+  },
+  {
+    "code": "MS",
+    "name": "Mato Grosso do Sul",
+    "category": "state"
+  },
+  {
+    "code": "MG",
+    "name": "Minas Gerais",
+    "category": "state"
+  },
+  {
+    "code": "PA",
+    "name": "Pará",
+    "category": "state"
+  },
+  {
+    "code": "PB",
+    "name": "Paraíba",
+    "category": "state"
+  },
+  {
+    "code": "PR",
+    "name": "Paraná",
+    "category": "state"
+  },
+  {
+    "code": "PE",
+    "name": "Pernambuco",
+    "category": "state"
+  },
+  {
+    "code": "PI",
+    "name": "Piauí",
+    "category": "state"
+  },
+  {
+    "code": "RJ",
+    "name": "Rio de Janeiro",
+    "category": "state"
+  },
+  {
+    "code": "RN",
+    "name": "Rio Grande do Norte",
+    "category": "state"
+  },
+  {
+    "code": "RS",
+    "name": "Rio Grande do Sul",
+    "category": "state"
+  },
+  {
+    "code": "RO",
+    "name": "Rondônia",
+    "category": "state"
+  },
+  {
+    "code": "RR",
+    "name": "Roraima",
+    "category": "state"
+  },
+  {
+    "code": "SC",
+    "name": "Santa Catarina",
+    "category": "state"
+  },
+  {
+    "code": "SP",
+    "name": "São Paulo",
+    "category": "state"
+  },
+  {
+    "code": "SE",
+    "name": "Sergipe",
+    "category": "state"
+  },
+  {
+    "code": "TO",
+    "name": "Tocantins",
+    "category": "state"
+  }
+]

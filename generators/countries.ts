@@ -3,39 +3,37 @@ import { writeFile } from "fs";
 
 const SOURCE = "https://wikipedia.org/wiki/ISO_3166-1";
 
-type Country = {
-  name: string;
-  alpha2: string;
-  alpha3: string;
-  code: string;
-};
-
-const countries = async (): Promise<void> => {
+const generateCountries = async ({
+  selector,
+}: {
+  selector: string;
+}): Promise<void> => {
   const browser = await puppeteer.launch();
 
   const page = await browser.newPage();
-  await page.goto(SOURCE);
+  await page.goto(SOURCE, { waitUntil: "networkidle0" });
 
-  const raw: Country[] = await page.evaluate(() => {
-    const rows = document.querySelectorAll(
-      "#mw-content-text > div.mw-parser-output > table:nth-child(32) > tbody > tr"
-    );
+  const raw = await page.evaluate(
+    ({ selector }) => {
+      const rows = document.querySelectorAll(selector);
 
-    const data = Array.from(rows, (row) => {
-      const columns = row.querySelectorAll("td");
+      const data = Array.from(rows, (row) => {
+        const columns = row.querySelectorAll("td");
 
-      return Array.from(columns, (column) =>
-        column.innerText.replace(/ *\[[^\]]*]/, "")
-      );
-    });
+        return Array.from(columns, (column) =>
+          column.innerText.replace(/ *\[[^\]]*]/, "")
+        );
+      });
 
-    return data.map((country) => ({
-      name: country[0],
-      alpha2: country[1],
-      alpha3: country[2],
-      code: country[3],
-    }));
-  });
+      return data.map((country) => ({
+        name: country[0],
+        alpha2: country[1].toUpperCase(),
+        alpha3: country[2].toUpperCase(),
+        code: country[3].toUpperCase(),
+      }));
+    },
+    { selector }
+  );
 
   await browser.close();
 
@@ -45,13 +43,11 @@ const countries = async (): Promise<void> => {
 
   await writeFile(
     "./src/data/countries.json",
-    JSON.stringify(countries, null, 4),
+    JSON.stringify(countries, null, 2),
     (err) => {
       if (err) throw err;
     }
   );
 };
 
-export type { Country };
-
-export { countries };
+export { generateCountries };
