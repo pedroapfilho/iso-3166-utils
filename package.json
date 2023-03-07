@@ -2,7 +2,7 @@
   "name": "iso-3166-utils",
   "author": "Pedro Filho",
   "description": "A helper to get country codes following the ISO 3316",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "repository": "https://github.com/pedroapfilho/iso-3166-utils.git",
   "keywords": [
@@ -15,10 +15,12 @@
   },
   "homepage": "https://github.com/pedroapfilho/iso-3166-utils#readme",
   "type": "module",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist"
   },
+  "sideEffects": false,
   "scripts": {
     "start": "tsc --watch",
     "build": "tsc",
