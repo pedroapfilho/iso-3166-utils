@@ -1,3 +1,5 @@
+import { describe, it, expect } from "vitest";
+
 import { subdivision } from "./";
 
 const STATE = {
@@ -8,7 +10,7 @@ const STATE = {
 
 const ALPHA_2 = "US";
 
-describe("SubDivision", () => {
+describe("Subdivision", () => {
   it("Should get subdivision from name", () => {
     expect(subdivision(ALPHA_2).getFromName(STATE.name)?.name).toEqual(
       STATE.name

@@ -283,5 +283,35 @@
     "code": "VI",
     "name": "Virgin Islands, U.S.",
     "category": "outlying area"
+  },
+  {
+    "code": "AS",
+    "name": "American Samoa",
+    "category": "as"
+  },
+  {
+    "code": "GU",
+    "name": "Guam",
+    "category": "gu"
+  },
+  {
+    "code": "MP",
+    "name": "Northern Mariana Islands",
+    "category": "mp"
+  },
+  {
+    "code": "PR",
+    "name": "Puerto Rico",
+    "category": "pr"
+  },
+  {
+    "code": "UM",
+    "name": "United States Minor Outlying Islands",
+    "category": "um"
+  },
+  {
+    "code": "VI",
+    "name": "Virgin Islands, U.S.",
+    "category": "vi"
   }
 ]

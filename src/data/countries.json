@@ -156,7 +156,7 @@
     "code": "064"
   },
   {
-    "name": "Bolivia (Plurinational State of)",
+    "name": "Bolivia, Plurinational State of",
     "alpha2": "BO",
     "alpha3": "BOL",
     "code": "068"
@@ -630,7 +630,7 @@
     "code": "360"
   },
   {
-    "name": "Iran (Islamic Republic of)",
+    "name": "Iran, Islamic Republic of",
     "alpha2": "IR",
     "alpha3": "IRN",
     "code": "364"
@@ -708,7 +708,7 @@
     "code": "296"
   },
   {
-    "name": "Korea (Democratic People's Republic of)",
+    "name": "Korea, Democratic People's Republic of",
     "alpha2": "KP",
     "alpha3": "PRK",
     "code": "408"
@@ -864,7 +864,7 @@
     "code": "484"
   },
   {
-    "name": "Micronesia (Federated States of)",
+    "name": "Micronesia, Federated States of",
     "alpha2": "FM",
     "alpha3": "FSM",
     "code": "583"
@@ -936,7 +936,7 @@
     "code": "524"
   },
   {
-    "name": "Netherlands",
+    "name": "Netherlands, Kingdom of the",
     "alpha2": "NL",
     "alpha3": "NLD",
     "code": "528"
@@ -1440,7 +1440,7 @@
     "code": "548"
   },
   {
-    "name": "Venezuela (Bolivarian Republic of)",
+    "name": "Venezuela, Bolivarian Republic of",
     "alpha2": "VE",
     "alpha3": "VEN",
     "code": "862"

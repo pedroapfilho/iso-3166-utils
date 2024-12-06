@@ -76,6 +76,11 @@ You can find a full list of countries from the <a href="https://en.wikipedia.org
 
 You can find a full list of subdivisions from the <a href="https://en.wikipedia.org/wiki/ISO_3166-2">source</a>
 
+## Next steps
+
+- [ ] Add more tests
+- [ ] Add more countries for subdivisions (possibly auto-generate this list)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/pedroapfilho/iso-3166-utils/issues).

@@ -16,12 +16,19 @@ const getFromCode = (code: string) => {
   return countries.find((c) => c.code.toUpperCase() === code.toUpperCase());
 };
 
+const data: {
+  name: string;
+  alpha2: string;
+  alpha3: string;
+  code: string;
+}[] = countries;
+
 const country = {
   getFromName,
   getFromAlpha2,
   getFromAlpha3,
   getFromCode,
-  data: countries,
+  data,
 };
 
 export { country };
